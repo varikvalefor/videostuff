@@ -1,0 +1,840 @@
+\documentclass{beamer}
+\usefonttheme{professionalfonts}
+\mode<presentation>
+{
+	    \useinnertheme{default}
+			\useoutertheme{infolines}
+			\usecolortheme{whale}
+			\setbeamercovered{transparent}
+}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usefonttheme{serif}
+\newcommand{\good}{\textcolor{green}{+ }}
+\newcommand{\bad}{\textcolor{red}{- }}
+\title{``Why OpenBSD?''}
+\author[VALEFOR, VARIK]{VALEFOR, VARIK \textless varikvalefor@aol.com \!\!\textgreater}
+\begin{document}
+	\maketitle
+	\section{About the Speaker}
+		\subsection{Summary}
+			\begin{frame}{Summary}
+				VARIK VALEFOR
+				\begin{itemize}
+					\item Intelligence analyst
+					\begin{itemize}
+						\item \textbf{\textit{Not}} a computer programmer!!!
+						\item Can only answer a few questions re: work
+					\end{itemize}
+					\item Diverse set of skills
+					\begin{itemize}
+						\item Mathematics!
+						\item Computer literacy
+						\item Information literacy
+						\item Patience
+						\item Necktie ironing			
+						\end{itemize}
+					\item ``Are these people totally incompetent, or what?''
+				\end{itemize}
+			\end{frame}
+	\section{Overview}
+		\subsection{Summary}
+			\begin{frame}{Summary}
+				\begin{itemize}
+					\item MS-DOS/Windows: 1986-present
+					\item Mac OS X: 2002-2016
+					\item GNU/Linux
+					\begin{itemize}
+						\item Slackware: On and off from 1997 or so
+						\item Fedora: 2005-2007
+						\item Ubuntu: 2005-present
+						\item Arch: 2003-2004
+					\end{itemize}
+					\item OpenBSD: Appx. 2000-present
+					\item FreeBSD: 2002-present
+				\end{itemize}
+			\end{frame}
+		\subsection{Reasons for (Not) Choosing}
+			\begin{frame}{MS-DOS}
+				\begin{itemize}
+					\item MS-DOS was ``it'' in 1986 \footnote{Enterprise equipment differed.}
+					\item \good Always felt like ``home''
+					\item \good Ease of use via simplicity
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Microsoft Windows}
+				\begin{itemize}
+					\item \good GUI was a breath of fresh air
+					\item \good Dominant operating system
+					\item \good Pre-2006 Windows feels welcoming
+					\item Decent documentation
+					\item Certain software ``only'' on Windows
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Mac OS X}
+				\begin{itemize}
+					\item Wanted to try a new OS
+					\item \textit{Was} very user-friendly
+					\item ``No, I didn't waste my money!''
+					\item Pretty but slow UI
+					\item \bad Eventually became slow
+					\item \bad UI digested, turned into crap
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Linux, Fedora}
+				\begin{itemize}
+					\item \good Allegedly user-friendly
+					\item \good SELinux
+					\item \bad Buggy
+					\item \bad Documentation sucks
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Linux, Ubuntu}
+				\begin{itemize}
+					\item \good Minimal configuration necessary
+					\item \good Allegedly user-friendly
+					\item \good Helpful community
+					\item \bad Slow
+					\item \bad Janky NetworkManager installed
+					\item \bad ``LOL U USE UBUNTU?!?!''
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Linux, Arch}
+				\begin{itemize}
+					\item \good Fast
+					\item \good Very configurable
+					\item \bad Unstable
+					\begin{itemize}
+						\item \bad ``Dang, I broke it.''
+						\item \bad ``Dang, the update broke it.''
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{OpenBSD}
+				\begin{itemize}
+					\item \good Unusually committed team
+					\item \good Nice security
+					\item \good Puffy looks cool
+					\item \good \good Phenomenal documentation
+					\item \bad A bit slow
+					\item \bad Can't mount CIFS
+					\item \bad Overall lousy compatibility
+					\begin{itemize}
+						\item ...for the sake of security!
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{FreeBSD}
+				\begin{itemize}
+					\item \good Good documentation
+					\item \good Decent compatibility
+					\begin{itemize}
+						\item \good WINE
+					\end{itemize}
+					\item \good Decent team
+					\item \bad \textit{Relatively} poor security
+				\end{itemize}
+			\end{frame}
+	\section{OpenBSD Compared to Others}
+		\subsection{Microsoft Windows}
+			\begin{frame}{OpenBSD v. Microsoft Windows}
+				\begin{center}
+					OpenBSD v. Microsoft Windows
+				\end{center}
+			\end{frame}
+			\begin{frame}{Stability}
+				\begin{itemize}
+					\item \good OpenBSD extremely stable
+					\begin{itemize}
+						\item \good Works perfectly for \textit{months}
+						\item \good DoS-resistant
+						\item \good Processes terminated instantly
+						\begin{itemize}
+							\item \texttt{kill -9}
+						\end{itemize}
+					\end{itemize}
+					\item Microsoft Windows \textit{was} stable
+					\begin{itemize}
+						\item Once worked perfectly for \textit{weeks}
+						\item \bad Process termination \textit{requested}
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Security}
+				\begin{itemize}
+					\item \good OpenBSD is security-focused
+					\begin{itemize}
+						\item \good Has few exploits
+						\item \good Extensive privilege control
+					\end{itemize}
+					\item \bad Microsoft Windows is \textit{not} security-focused
+					\begin{itemize}
+						\item \good UAC
+						\begin{itemize}
+							\item \bad Deemed inconvenient and removed
+						\end{itemize}
+						\item \bad Has lots of exploits
+						\item \bad WannaCry
+						\item \bad Crappy privilege control
+					\end{itemize}
+					\item Closed v. open source
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Ease of Use}
+				OpenBSD
+				\begin{itemize}
+					\item \bad Unintuitive to \textit{new users}
+					\item \good $\neg(\textrm{PRETENDS TO BE INTUITIVE})$
+					\item \good Provides excellent documentation
+					\item \good Easily learned with an open mind
+				\end{itemize}
+				Windows 8+
+				\begin{itemize}
+					\item Not very intuitive
+					\item \bad Pretends to be intuitive
+					\item \bad Documents only essentials
+					\begin{itemize}
+						\item Exception: Enterprise
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Performance}
+				OpenBSD
+				\begin{itemize}
+					\item \good Processor speed directly controllable
+					\item \good All background stuff controllable
+					\begin{itemize}
+						\item Via runtime configuration files
+						\item Via source code modification
+					\end{itemize}
+				\end{itemize}
+				Windows Vista+
+				\begin{itemize}
+					\item \bad Speed control difficult
+					\item Some background stuff controllable
+					\begin{itemize}
+						\item Search bad guides for info.
+						\item Find crappy configuration file
+						\item Change settings
+						\item Break the box
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Automation}
+				OpenBSD
+				\begin{itemize}
+					\item \good Promotes automation
+					\item \good Cron jobs made available to user
+					\item \good ``Delete the contents of your HDD every hour; we don't care.''
+				\end{itemize}
+				Microsoft Windows
+				\begin{itemize}
+					\item Automation stuff available...
+					\item \bad Documentation \textit{really} sucks
+					\item \bad Certain things just unavailable
+					\item \bad AutoHotKey and similar tools necessary
+					\item \bad Cannot perform all actions
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Application Installation}
+				OpenBSD
+				\begin{itemize}
+					\item \good Standard interface via \texttt{pkg\_add}
+					\item \good Download stuff externally
+					\item \good \texttt{make} and whatnot automatically installed
+				\end{itemize}
+				Windows 7-
+				\begin{itemize}
+					\item \bad No inbuilt repo
+					\begin{itemize}
+						\item \bad A bit slow
+						\item \good Very simple
+					\end{itemize}
+					\item \good External downloads
+					\begin{itemize}
+						\item \bad Many closed-source
+					\end{itemize}
+				\end{itemize}
+				Windows 8+
+				\begin{itemize}
+					\item \bad Inbuilt repo via Windows Store (sucks)
+					\item External downloads
+					\begin{itemize}
+						\item \bad Many closed-source
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Customisation}
+				OpenBSD
+				\begin{itemize}
+					\item \good Modification of code encouraged
+					\item \good The best things in life are free
+					\item \good BSD Licence
+					\item X Window System
+				\end{itemize}
+				Windows 8+
+				\begin{itemize}
+					\item \bad Code modification strongly discouraged
+					\item \bad Source code available only to Microsoft and co.
+					\item \bad Microsoft DWM and Explorer
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Transparency}
+				OpenBSD
+				\begin{itemize}
+					\item \good Understanding system encouraged through...
+					\begin{itemize}
+						\item \good \good Extensive traditional documentation
+						\item \good FAQ
+						\item \good \good Ability to contact devs
+					\end{itemize}
+					\item \good Consistent, clean source code
+				\end{itemize}
+				Windows
+				\begin{itemize}
+					\item \bad Understanding system discouraged
+					\item \bad Code often obfuscated
+				\end{itemize}
+			\end{frame}
+		\subsection{Mac OS X}
+			\begin{frame}{OpenBSD v. Mac OS X}
+				\begin{center}
+					OpenBSD v. Mac OS X
+				\end{center}
+			\end{frame}
+			\begin{frame}{Stability}
+				OpenBSD
+				\begin{itemize}
+					\item \good Is a BSD!
+					\item \good Runs for months
+				\end{itemize}
+				Not-so-open BSD
+				\begin{itemize}
+					\item \good Is a BSD!
+					\item Runs for weeks
+					\item \bad Kernel panics relatively frequent
+					\item \bad Hanging... lots of hanging
+					\begin{itemize}
+						\item Automatically restarts
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Security}
+				OpenBSD
+				\begin{itemize}
+					\item SSH enabled by default
+					\begin{itemize}
+						\item ...without root login
+					\end{itemize}
+				\end{itemize}
+				Mac OS X
+				\begin{itemize}
+					\item SSH disabled by default
+					\begin{itemize}
+						\item \good Great for terminals
+						\item \bad Not good for servers
+						\item \bad Not good for remote work
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Application Installation}
+				OpenBSD
+				\begin{itemize}
+					\item \good \texttt{pkg\_add}
+					\item \good Compiling sources
+					\item \good Downloading binaries
+				\end{itemize}
+				Mac OS X
+				\begin{itemize}
+					\item \good Inbuilt repo via App Store
+					\begin{itemize}
+						\item Other sources discouraged
+						\item \bad ``Hey, idiot!  You're untrustworthy and incompetent!''
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Ease of Use}
+				OpenBSD
+				\begin{itemize}
+					\item \bad Not intuitive for \textit{new users}
+					\item \good \good Excellent documentation
+					\item \good $\neg\left(\textrm{PRETENDS TO BE INTUITIVE}\right)$
+				\end{itemize}
+				Mac OS X
+				\begin{itemize}
+					\item \bad VARIK finds unintuitive
+					\item \bad Terrible documentation
+					\item \bad Pretends to be intuitive
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Performance}
+				OpenBSD
+				\begin{itemize}
+					\item \good Multiple possible interfaces
+					\begin{itemize}
+						\item \good Many very basic
+						\item \good Many very fast
+						\item Some are really terrible
+					\end{itemize}
+					\item \good ``Extreme'' tweaking encouraged
+					\item \good Tiny ($<$2G) install
+				\end{itemize}
+				Mac OS X
+				\begin{itemize}
+					\item Oh, boy...
+					\item \bad Pretty interface is slow
+					\item \bad ``Extreme'' tweaking discouraged
+					\item \bad Huge ($>$15G) install anymore
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Automation}
+				OpenBSD
+				\begin{itemize}
+					\item \good \texttt{cron}
+					\item \good Shell scripting
+					\item \good Manuals available within system
+					\item \good All users encouraged to automate stuff
+				\end{itemize}
+				Mac OS X
+				\begin{itemize}
+					\item ``Automator''
+					\begin{itemize}
+						\item Very untraditional
+						\item Not much experience with this program
+					\end{itemize}
+					\item Shell scripting
+					\item Cron jobs
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Transparency}
+				OpenBSD
+				\begin{itemize}
+					\item \good Source code public
+					\item \good \good Understanding of system encouraged
+					\item \good Clean code
+				\end{itemize}
+				Mac OS X
+				\begin{itemize}
+					\item \bad Closed-source
+					\item \bad Stuff obfuscated
+				\end{itemize}
+			\end{frame}
+		\subsection{Linux, Ubuntu}
+			\begin{frame}{OpenBSD v. Ubuntu Linux}
+				\begin{center}
+					OpenBSD v. Ubuntu Linux
+				\end{center}
+			\end{frame}
+			\begin{frame}{Stability}
+				OpenBSD
+				\begin{itemize}
+					\item \good ``Set it and forget it''
+					\item \good Works for months
+				\end{itemize}
+				Ubuntu Linux
+				\begin{itemize}
+					\item \bad \bad \textit{Unpredictable}
+					\begin{itemize}
+						\item Some servers reliable
+						\item Others not...
+					\end{itemize}
+					\item Certain tweaks necessary
+					\item \textbf{Can} work for months \footnote{Not guaranteed!}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Security}
+				OpenBSD
+				\begin{itemize}
+					\item \good Security-focused
+					\item \good Appx. 300 known exploits
+					\begin{itemize}
+						\item \good Plenty of savvy users
+					\end{itemize}
+					\item \bad No Wayland!
+				\end{itemize}
+				Ubuntu Linux
+				\begin{itemize}
+					\item \bad Linux kernel
+					\begin{itemize}
+						\item Boo!!!
+						\item \bad Made carelessly
+						\item \bad $1\cdot10^5$ \textit{known} exploits
+					\end{itemize}
+					\item \bad Wayland!
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Ease of Use}
+				OpenBSD
+				\begin{itemize}
+					\item \good \good Excellent documentation
+					\item \good FAQ page describes lots of stuff
+				\end{itemize}
+				Ubuntu Linux
+				\begin{itemize}
+					\item Decent documentation
+					\item \good Stack Exchange page dedicated to Ubuntu Linux
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Performance}
+				OpenBSD
+				\begin{itemize}
+					\item Not a minimal installation
+					\begin{itemize}
+						\item \good Nonessential stuff not initially enabled
+						\item \good Nonessential stuff easily removed
+					\end{itemize}
+				\end{itemize}
+				Ubuntu Linux
+				\begin{itemize}
+					\item Not a minimal installation
+					\begin{itemize}
+						\item \bad Some nonessential stuff initially enabled
+						\item \good Nonessential stuff easily removed
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Automation}
+				OpenBSD
+				\begin{itemize}
+					\item \good \texttt{cron}
+					\item \good Shell scripting
+				\end{itemize}
+				Ubuntu Linux
+				\begin{itemize}
+					\item \good \texttt{cron}
+					\item \good Shell scripting
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Package Management}
+				OpenBSD
+				\begin{itemize}
+					\item \texttt{pkg\_add}
+					\begin{itemize}
+						\item \good User-friendly
+						\item \bad A bit slow
+					\end{itemize}
+					\item \good Build own binaries
+					\item \good Download pre-built binaries
+				\end{itemize}
+				Ubuntu Linux
+				\begin{itemize}
+					\item Debian \texttt{aptitude}
+					\begin{itemize}
+						\item \good User-friendly
+						\item \good Relatively fast
+					\end{itemize}
+					\item \good Make own binaries
+					\item \good Download external binaries
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Transparency}
+				OpenBSD
+				\begin{itemize}
+					\item \good Understanding system encouraged
+				\end{itemize}
+				Ubuntu Linux
+				\begin{itemize}
+					\item \good Understanding system encouraged
+				\end{itemize}
+			\end{frame}
+		\subsection{I use Arch btw}
+			\begin{frame}{I use Arch btw}
+				\begin{center}
+					OpenBSD v. Arch Linux
+				\end{center}
+			\end{frame}
+			\begin{frame}{Stability}
+				OpenBSD
+				\begin{itemize}
+					\item \good ``Set it and forget it''
+					\item \good Runs for months
+				\end{itemize}
+				Arch Linux
+				\begin{itemize}
+					\item \bad Setting changes often necessary
+					\item \bad Notoriously unstable
+					\item \bad Potentially could run for months; unlikely
+					\begin{itemize}
+						\item \bad ``A new exploit was published... as well as a patch!  Oh, dang, the patch broke it.''
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Ease of Use}
+				OpenBSD
+				\begin{itemize}
+					\item \good \good Excellent documentation
+					\item \good Default utilities' interfaces consistent
+				\end{itemize}
+				Arch Linux
+				\begin{itemize}
+					\item \good Good documentation
+					\item Default utilities' interfaces not consistent
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Performance}
+				OpenBSD
+				\begin{itemize}
+					\item \bad Slower by default
+					\begin{itemize}
+						\item Crypto stuff
+						\item Miscellaneous utilities installed
+					\end{itemize}
+					\item \good Highly tweakable
+				\end{itemize}
+				Arch Linux
+				\begin{itemize}
+					\item \good Can legitimately be ludicrously fast
+					\item \good Bare-bones
+					\item \good Highly tweakable
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Security}
+				OpenBSD
+				\begin{itemize}
+					\item \good Security-focused
+					\item \good Appx. 300 known exploits
+					\begin{itemize}
+						\item \good Plenty of savvy users
+					\end{itemize}
+					\item \bad No Wayland!
+				\end{itemize}
+				Arch Linux
+				\begin{itemize}
+					\item \bad Linux kernel
+					\begin{itemize}
+						\item Boo!!!
+						\item \bad Made carelessly
+						\item \bad $1\cdot10^5$ \textit{known} exploits
+					\end{itemize}
+					\item \good Wayland!
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Package Management}
+				OpenBSD
+				\begin{itemize}
+					\item \texttt{pkg\_add}
+				\end{itemize}
+				Arch Linux
+				\begin{itemize}
+					\item \texttt{pacman}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Transparency}
+				OpenBSD
+				\begin{itemize}
+					\item \good Understanding system encouraged
+					\item \good Relatively clean source code
+				\end{itemize}
+				Arch Linux
+				\begin{itemize}
+					\item \good Understanding system encouraged
+					\item \bad Relatively messy source code
+				\end{itemize}
+			\end{frame}
+		\subsection{Linux, Fedora}
+			\begin{frame}
+				\begin{center}
+					OpenBSD v. Fedora Linux
+				\end{center}
+			\end{frame}
+			\begin{frame}{Stability}
+				OpenBSD
+				\begin{itemize}
+					\item \good Very stable
+					\item \good ``Set it and forget it''
+					\item \good Runs for months
+				\end{itemize}
+				Fedora Linux
+				\begin{itemize}
+					\item \bad Somewhat unpredictable
+					\item \bad Runs for minutes... to months
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Security}
+				OpenBSD
+				\begin{itemize}
+					\item \good Security-focused
+					\item \good Appx. 300 known exploits
+					\begin{itemize}
+						\item \good Plenty of savvy users
+					\end{itemize}
+					\item \bad No Wayland!
+				\end{itemize}
+				Fedora Linux
+				\begin{itemize}
+					\item \bad Linux kernel
+					\begin{itemize}
+						\item Boo!!!
+						\item \bad Made carelessly
+						\item \bad $1\cdot10^5$ \textit{known} exploits
+					\end{itemize}
+					\item \good Wayland!
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Ease of Use}
+				OpenBSD
+				\begin{itemize}
+					\item \good \good Excellent documentation
+					\item GUI not enabled
+					\begin{itemize}
+						\item Enabled pretty easily
+						\item Default fast but looks a bit ugly
+					\end{itemize}
+				\end{itemize}
+				Fedora Linux
+				\begin{itemize}
+					\item \bad Fairly mediocre documentation
+					\item GUI enabled by default
+					\begin{itemize}
+						\item \bad Default a bit slow
+						\item Non-intuitive version of Win95/Win98's UI
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Performance}
+				OpenBSD
+				\begin{itemize}
+					\item Somewhat slow
+					\begin{itemize}
+						\item Security improvements
+						\item \good Many sources of slowness can be disabled
+					\end{itemize}
+					\item Not a minimal installation
+					\begin{itemize}
+						\item \good Stuff easily disabled
+					\end{itemize}
+				\end{itemize}
+				Fedora Linux
+				\begin{itemize}
+					\item Always felt slow
+					\item \bad Slow for what Fedora is
+					\item Not a minimal installation
+					\begin{itemize}
+						\item \good Stuff easily disabled
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Automation}
+				OpenBSD
+				\begin{itemize}
+					\item \good \texttt{cron}
+					\item \good Shell scripting
+				\end{itemize}
+				Fedora Linux
+				\begin{itemize}
+					\item \good \texttt{cron}
+					\item \good Shell scripting
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Transparency}
+				OpenBSD
+				\begin{itemize}
+					\item \good Source code public
+					\item \good \good Understanding system encouraged
+				\end{itemize}
+				Fedora Linux
+				\begin{itemize}
+					\item \good Source code public
+					\item \good Understanding system encouraged... but not as much as OpenBSD
+				\end{itemize}
+			\end{frame}
+		\subsection{FreeBSD}
+			\begin{frame}{OpenBSD v. FreeBSD}
+				\begin{center}
+					OpenBSD v. FreeBSD
+				\end{center}
+			\end{frame}
+			\begin{frame}{Stability}
+				OpenBSD
+				\begin{itemize}
+					\item \good Runs for months
+					\item \good Updates rarely break things
+					\item ``Are you copying me?''
+				\end{itemize}
+				FreeBSD
+				\begin{itemize}
+					\item \good Runs for months
+					\item \good Updates rarely break things
+					\item ``Are you copying me?''
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Security}
+				OpenBSD
+				\begin{itemize}
+					\item \good Security of utmost importance
+				\end{itemize}
+				FreeBSD
+				\begin{itemize}
+					\item \bad Security traded for speed
+				\end{itemize}
+				Both still pretty good
+			\end{frame}
+			\begin{frame}{Ease of Use}
+				OpenBSD
+				\begin{itemize}
+					\item \good \good Excellent documentation
+					\item \good Utilities consistent
+				\end{itemize}
+				FreeBSD
+				\begin{itemize}
+					\item \good \good \textsl{Very slightly} worse documentation
+					\item \good Utilities \textsl{very slightly} less consistent
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Performance}
+				OpenBSD
+				\begin{itemize}
+					\item Relatively slow
+					\item Speed sacrificed for security
+					\item Better for paranoid nutcases
+				\end{itemize}
+				FreeBSD
+				\begin{itemize}
+					\item Relatively fast
+					\item Security sacrificed for speed
+					\item Better when speed is of utmost importance
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Automation}
+				OpenBSD
+				\begin{itemize}
+					\item \good \texttt{cron}
+					\item \good Shell scripting
+				\end{itemize}
+				FreeBSD
+				\begin{itemize}
+					\item \good \texttt{cron}
+					\item \good Shell scripting
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Transparency}
+				OpenBSD
+				\begin{itemize}
+					\item \good Understanding system encouraged
+					\item \good Clean source code
+					\item ``No, really, stop copying me.''
+				\end{itemize}
+				FreeBSD
+				\begin{itemize}
+					\item \good Understanding system encouraged
+					\item \good Clean source code
+					\item ``No, really, stop copying me.''
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Mascots}
+				OpenBSD
+				\begin{itemize}
+					\item PUFFY
+					\item Defensive spikes
+				\end{itemize}
+				FreeBSD
+				\begin{itemize}
+					\item BEASTIE
+					\item Trident can be used for spaghetti
+				\end{itemize}
+			\end{frame}
+\end{document}
