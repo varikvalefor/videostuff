@@ -1,0 +1,475 @@
+\documentclass{beamer}
+\usefonttheme{professionalfonts}
+\mode<presentation>
+{
+	\usetheme{Warsaw}
+	\setbeamercovered{transparent}
+}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{gensymb}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{soul}
+\usepackage{xcolor}
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usefonttheme{serif}
+\newcommand{\sequiv}{\stackrel{\mathclap{\normalfont\mbox{s}}}{\equiv}}
+\title[BRINMANOLA]{A Brief Introduction to the Use of Mathematical Notation as a Language}
+\author[VALEFOR, VARIK]{VALEFOR, VARIK \textless varikvalefor@aol.com \!\!\textgreater}
+\begin{document}
+	\maketitle
+	\begin{frame}{Preface: The Curse of Knowledge}
+		Curse of knowledge
+		\begin{itemize}
+			\item Do not remember being a newbie very well
+			\item ``What do newbies not know?''
+			\item ``What \textit{do} newbies know?''
+			\item Confusion should be voiced
+		\end{itemize}
+\end{frame}
+	\begin{frame}{About the Speaker}
+		VARIK VALEFOR
+			\begin{itemize}
+				\item Intelligence analyst
+				\begin{itemize}
+				\item \textbf{\textit{Not}} a computer programmer!!!
+				\item Can only answer a few questions re: work
+			\end{itemize}
+				\item Diverse set of skills
+			\begin{itemize}
+				\item Mathematics!
+				\begin{itemize}
+					\item Can't add numbers or do other low-level things
+					\item Dove into calculus in the sixth grade
+					\item Concepts understood and applied well
+					\item Computers made for a reason
+				\end{itemize}
+				\item Computer programming
+				\begin{itemize}
+					\item Obsoletes low-to-mid-level mathematical tasks
+				\end{itemize}
+				\item Hosting kick-ass parties near Thanksgiving
+				\begin{itemize}
+					\item Egg splatter
+					\item Roomba
+					\item Battery explosion
+				\end{itemize}
+			\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+	\section{What Is Mathematical Notation?}
+		\begin{frame}
+			\begin{center}
+				What Is Mathematical Notation?
+			\end{center}
+		\end{frame}
+		\subsection{Overview}
+			\begin{frame}{What Is Mathematical Notation?}
+				Mathematical notation
+				\begin{itemize}
+					\item Used internally by mathematicians
+					\item Different from the ``human languages''
+					\begin{itemize}
+						\item Simplicity: No adjectives, etc.
+						\item Not directly spoken
+					\end{itemize}
+					\item \textit{Not limited to numbers}
+					\begin{itemize}
+						\item Neither is mathematics
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+		\subsection{Advantages of Mathematical Notation}
+			\begin{frame}{Advantages of Mathematical Notation}
+				Extreme precision\\
+				\begin{itemize}
+					\item Homonyms not a thing here
+				\end{itemize}
+				Extreme terseness\\
+				Variables and functions locally defined
+				\begin{itemize}
+					\item English formally uses global definitions in dictionaries
+				\end{itemize}
+				Facilitates analytical thought
+				\begin{itemize}
+					\item Extremely dry
+					\item No loaded words
+					\item Arguments easily followed and contested
+				\end{itemize}
+				Humour still possible
+				\begin{itemize}
+					\item Surrealism
+					\item Weird verbosity
+					\item ``No shit, SHERLOCK.''
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Example of a Joke}
+				\[
+					\frac{\textrm{d}}{\textrm{d}x} \frac{1}{x} =
+          \frac{\cancel{\textrm{d}}}{\cancel{\textrm{d}}x} \frac{1}{x} =
+          \frac{}{x} \frac{1}{x} =
+          -\frac{1}{x^2}.
+				\]
+			\end{frame}
+		\subsection{Disadvantages of Mathematical Notation}
+			\begin{frame}{Disadvantages of Mathematical Notation}
+				Not directly spoken
+				\begin{itemize}
+					\item Converted to ``human language''
+				\end{itemize}
+				Not very readable for the ``uninitiated''
+				\begin{itemize}
+					\item Maybe this video can be of use!
+				\end{itemize}
+				No global definitions
+				\begin{itemize}
+					\item Definitions \textit{\textbf{must}} be read
+				\end{itemize}
+				Typos can be \textit{really} bad
+			\end{frame}
+	\section{Grammar of Mathematical Notation}
+		\begin{frame}
+			\begin{center}
+				The Grammar of Mathematical Notation
+			\end{center}
+		\end{frame}
+			\subsection{Atoms}
+				\begin{frame}{Nouns}
+					Literals
+					\begin{itemize}
+						\item $2$, $3.14$, etc.
+					\end{itemize}
+					Variables
+					\begin{itemize}
+						\item $\pi$, $e$, $\textit{asshat}$, etc.
+						\item Multi-character variable names are valid!
+					\end{itemize}
+					Functions and operators
+					\begin{itemize}
+						\item $\sqrt{2}$, $x\left(y\right)$,
+            and so on, and so on, and so on, and so on...
+					\end{itemize}
+					Anything contained within parentheses\\
+					Any expression
+				\end{frame}
+				\begin{frame}{Verbs}
+					``Indicators''
+					\begin{itemize}
+						\item Logical connectives and declarations
+						\item ``$=$'', ``$\implies$'', etc.
+					\end{itemize}
+					Functions
+					\begin{itemize}
+						\item Yes!
+						\item Act as nouns \textit{or} verbs
+						\item Example: ``$x\left(y\right).$'' $\sequiv$
+              ``$x\left(y\right) \textrm{ IS TRUE}.$''
+					\end{itemize}
+				\end{frame}
+			\subsection{Sentences}
+				\begin{frame}{Sentences in Mathematical Notation}
+					Sentences
+					\begin{itemize}
+						\item Contain verb and noun
+						\item Must express some sort of idea
+						\item ``Can this be literally translated to a proper English sentence?''
+					\end{itemize}
+				\end{frame}
+				\begin{frame}{Examples of Sentences}
+					\[
+						a := 0! = 1.
+					\]
+					\[
+						\forall z \in \mathbb{N}, \ \left(z + 1\right) \in \mathbb{Z}.
+					\]
+					\[
+						p\left(enis\right).\footnote{$p$ must be a binary function.}
+					\]
+				\end{frame}
+				\begin{frame}{Examples of Non-Sentences}
+					\[
+						5 + 2
+					\]
+					\[
+						\sqrt{5318008}
+					\]
+					\[
+						90210
+					\]
+				\end{frame}
+		\subsection{Punctuation}
+			\begin{frame}{Ending Punctuation}
+				Full stops
+				\begin{itemize}
+					\item Used to end all statements
+				\end{itemize}
+				Question marks
+				\begin{itemize}
+					\item \textbf{Not accepted by all men}
+					\item Used to indicate uncertainty
+					\item Used in place of noun
+				\end{itemize}
+				$\neg\left(\textrm{Exclamation marks}\right)$
+				\begin{itemize}
+					\item Used for factorials
+					\item Other usage would be a bit confusing
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Questions}
+				Questions in mathematical notation
+				\begin{itemize}
+					\item Not completely accepted
+					\item VARIK wrote this portion of a style guide
+					\item Example: ``$X \implies Y?$''
+					\item Example: ``$? \ \implies Y.$''
+				\end{itemize}
+			\end{frame}
+	\section{Overview of Common Symbols}
+		\begin{frame}
+			\begin{center}
+				An Overview of Commonly-Used Symbols
+			\end{center}
+		\end{frame}
+		\subsection{Logical Symbols}
+			\begin{frame}{Arrows}
+				$\implies$ --- implication\\
+				\begin{itemize}
+					\item ``$A \implies B$.'' $\sequiv$ ``IF $A$, THEN $B$.''
+				\end{itemize}
+				$\Longleftarrow$  --- ``only if''\\
+				\begin{itemize}
+					\item ``$A \Longleftarrow B.$'' $\sequiv$ ``IF $B$, THEN $B$.''
+				\end{itemize}
+				$\iff$ --- ``if and only if'' or ``iff''
+				\begin{itemize}
+					\item $\left(A \implies B\right) \land \left(B \implies A\right)$
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Other Logical Symbols}
+				``$\exists$'' $\sequiv$ ``there exists''\\
+				``$\ni, \ \textrm{s.t.}$'' $\sequiv$ ``such that''\\
+				``$\therefore$'' $\sequiv$ ``therefore''\\
+				``$\because$'' $\sequiv$ ``because''\\
+				``$\land$'' $\sequiv$ ``and''\\
+				``$\lor$'' $\sequiv$ ``or''\\
+				``$\veebar$'' $\sequiv$ ``xor''\\
+				``$\neg$'' $\sequiv$ ``not''
+				\begin{itemize}
+					\item Example: $\neg\left(1 + 2 = 1 - 2\right)$
+				\end{itemize}
+				``$\forall$'' $\sequiv$ ``for all''
+				\begin{itemize}
+					\item Example: $\forall x \in \mathbb{C}, \ x + 1 \neq x.$
+				\end{itemize}
+			\end{frame}
+		\subsection{Sequences and Similar Things}
+			\begin{frame}{Sequence/Set Stuff}
+				$\in$ --- element of\\
+				\begin{itemize}
+					\item NOT semantically equivalent to ``$=$''!
+					\item Equality statements bidirectional
+					\item $\forall a, \ \forall b, \ a = b \iff b = a.$
+				\end{itemize}
+				$\subset$, $\subseteq$ --- subset\\
+				$\#$ --- cardinality
+				\begin{itemize}
+					\item Example: $\#A = \textrm{ANSWER}
+          \left(\textrm{``How many elements does $A$ contain?''}\right)$
+				\end{itemize}
+				$A_n$ --- element number $n$ of sequence $A$\\
+				$\cup$ --- set union\\
+				\begin{itemize}
+					\item Example: $A \cup B$
+				\end{itemize}
+				$\cap$ --- set intersection
+				\begin{itemize}
+					\item Example: $A \cap B$
+				\end{itemize}
+				$\setminus$ or $-$ --- set difference
+				\begin{itemize}
+					\item Example: $A \setminus B$ or $A - B$
+				\end{itemize}
+			\end{frame}
+		\subsection{General Stuff}
+			\begin{frame}{The Equality Operator}
+				Equality operator
+				\begin{itemize}
+					\item Misunderstood \textit{far} too often
+					\item Both sides equal
+					\item Means same thing when reversed
+					\begin{itemize}
+						\item $\left(a + b = c\right) \iff \left(c = b + a\right)$
+					\end{itemize}
+					\item Improper usage
+					\begin{itemize}
+						\item $\textrm{SUM}\left(1,2,3,4,5\right)$
+						\item $\neg\left(1 + 2 = 3 + 3 = 6 + 4 = 10 + 5 = 15\right).$
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+	\section{Relatively Advanced Stuff}
+		\begin{frame}
+			\begin{center}
+				Relatively Advanced Stuff
+			\end{center}
+		\end{frame}
+		\subsection{Functions}
+			\begin{frame}{What Are Functions?}
+				Functions
+				\begin{itemize}
+					\item Map input to output
+					\item Can be thought of as ``performing an action''
+					\item Extremely versatile
+					\item Operate on numbers, Boolean values, sets...
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Examples}
+				\[
+					\textrm{colour} : \textrm{OBJ} \mapsto \textrm{SEQ}.
+				\]
+				\[
+					\forall o, \ \textrm{colour}\left(o\right) = \textrm{COLOUR OF OBJECT $o$}.
+				\]
+			\end{frame}
+		\subsection{Piecewise Function Definitions}
+			\begin{frame}{Overview}
+				Piecewise definitions
+				\begin{itemize}
+					\item Declare functions
+					\item Specifically outline function outputs
+					\item Support any sort of input
+					\item Equivalent to \texttt{if} statements in CS
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Example}
+				\[
+					\forall x \in \mathbb{R}, \ 
+					\left|x\right| :=
+					\left\{
+						\begin{array}{rl}
+							x	&	x \geq 0\\
+							-x & x < 0
+						\end{array}
+					\right..
+				\]
+			\end{frame}
+		\subsection{Sets and Sequences}
+			\begin{frame}{Sets}
+				Sets
+				\begin{itemize}
+					\item ``Unordered lists''
+					\item Denoted by $\left\{\textrm{curly brackets}\right\}$
+					\item Can contain zero elements... or be uncountably infinite
+					\item Useful whenever dealing with multiple things
+					\item Can contain quite literally anything
+					\begin{itemize}
+						\item Even things which have never existed!
+						\item Even things which never \textit{will} exist!!!
+					\end{itemize}
+					\item Can be clearly defined
+					\begin{itemize}
+						\item Example: ``$A = \left\{\textrm{MACAULAY CULKIN},\ 
+							\textrm{SADDAM HUSSEIN}\right\}$''
+					\end{itemize}
+					\item Or...
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Sequences}
+				Sequences
+				\begin{itemize}
+					\item Ordered sets
+					\item Denoted by $\left(\textrm{parentheses}\right)$ or
+						$\left\langle\textrm{angle brackets}\right\rangle$
+					\item Access of individual sets via $A_n$ useful
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Set-Builder Notation}
+				Set-builder notation
+				\begin{itemize}
+					\item Equal to set which matches conditions
+					\item Can return null set
+					\item Extremely useful when working with infinite sets
+					\item Same thing used for sequences
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Example of Set-Builder Notation}
+				\[
+					x^2 = 1 \iff
+					x \in \left\{y : y^2 = 1\right\} \iff
+					x \in \left\{-1,\ 1\right\}.
+				\]
+				However...
+				\[
+					A :=
+					\left\{
+						\textrm{APPLE} :
+						\textrm{COLOUR}\left(\textrm{APPLE}\right) =
+						\textrm{GREEN}
+					\right\}.
+				\]
+				Also...
+				\[
+					P :=
+					\left\langle
+						a \in \left(\mathbb{N} - \left\{0,1\right\}\right) :
+						a \textrm{ IS PRIME}
+					\right\rangle.
+				\]
+			\end{frame}
+	\section{Use Cases}
+		\subsection{Logical Arguments}
+			\begin{frame}{Why Use this Notation in Arguments?}
+				Easily dissected
+				\begin{itemize}
+					\item Facilitates checking for errors
+					\item Arguing against becomes easy
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Example}
+				Where $a$ denotes a man, \quad $\forall a, \ 
+				\left(k\left(a\right) \iff \textrm{$a$ IS KNOWLEDGABLE}\right) \land
+				\left(c\left(a\right) \iff a \textrm{ IS CORRUPT}\right) \land
+				\left(p\left(a\right) \iff a \textrm{ IS POWERFUL}\right)$,
+				\[
+					\forall a, \ k\left(a\right) \implies p\left(a\right).
+				\]
+				\[
+					\forall a, \ p\left(a\right) \implies c\left(a\right).
+				\]
+				\[
+					\therefore \forall a, \ k\left(a\right) \implies c\left(a\right).
+				\]
+			\end{frame}
+		\subsection{General Communication}
+			\begin{frame}{Why Use this Notation in General Communication?}
+				Mathematical notation...
+				\begin{itemize}
+					\item Reduces confusion
+					\item Saves time
+					\item \textit{May} encourage thinking about stuff objectively
+					\item Is easily translated to other languages
+					\begin{itemize}
+						\item Only definitions need be translated
+					\end{itemize}
+				\end{itemize}
+			\end{frame}
+			\begin{frame}{Example}
+				Refer to the example for the use of mathematical notation in 
+        logical arguments.  Both things end up looking fairly similar.
+			\end{frame}
+	\section{Conclusion}
+		\subsection{Conclusion}
+			\begin{frame}{Conk'd!}
+				NOT COMPREHENSIVE!!!\\
+				At least one of these things should apply:
+				\begin{itemize}
+					\item Spiked reader's \st{drink} interest in mathematics
+					\item Encouraged better structuring of arguments
+				\end{itemize}
+				Recommendations welcomed
+			\end{frame}
+\end{document}
